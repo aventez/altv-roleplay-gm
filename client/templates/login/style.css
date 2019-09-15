@@ -1,0 +1,201 @@
+			body {
+				background: none;
+			}
+		
+			.box {
+				position: fixed;
+				padding: 30px;
+				border-radius: 10px;
+				background-color: #fff;
+				font-family: 'Montserrat', sans-serif;
+			}
+
+            .box-login {
+                top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+                width: 325px;
+                max-width: 325px;
+            }
+
+            .box-select {
+                top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+                width: 1200px;
+                max-width: 1200px;
+                transition: linear left 0.5s, linear width 0.5s, linear max-width 0.5s;
+            }
+
+            .box-creator {
+                top: 50%;
+  				left: 10%;
+  				transform: translate(-50%, -50%);
+                width: 325px;
+                max-width: 325px;
+                transition: linear left 0.5s, linear width 0.5s, linear max-width 0.5s;
+            }
+
+			.button {
+				font-size: 15px;
+    			line-height: 1.5;
+    			color: #fff;
+    			text-transform: uppercase;
+                letter-spacing: 0.15em;
+    			width: 100%;
+    			height: 50px;
+    			border-radius: 25px;
+    			background:#2f363e;
+    			display: -webkit-box;
+    			display: -webkit-flex;
+    			display: -moz-box;
+    			display: -ms-flexbox;
+    			display: flex;
+    			justify-content: center;
+    			align-items: center;
+    			padding: 0 25px;
+    			-webkit-transition: all 0.4s;
+    			-o-transition: all 0.4s;
+    			-moz-transition: all 0.4s;
+    			transition: all 0.4s;
+    			outline: none;
+    			border: none;
+                margin: 15px 0;
+			}
+
+			.input {
+				font-size: 15px;
+    			line-height: 1.5;
+    			color: #2f363e;
+    			display: block;
+    			background: #e6e6e6;
+    			height: 50px;
+    			border-radius: 25px;
+    			padding: 0 30px;
+    			outline: none;
+				border: none;
+				text-align: center;
+                max-width: 250px;
+			}
+
+            input {
+                transition: linear border .1s;
+            }
+
+            input:focus {
+                border: 1px solid #2f364e;
+            }
+
+            button, input {
+                outline: none;
+                border: none;
+            }
+
+			img {
+				border-radius: 50%;
+				width: 50%;
+				display: block;
+				margin: 0;
+				padding: 0;
+			}
+
+            .logo-default {
+                width: 50%;
+            }
+
+            .logo-select {
+                width: 10%;
+            }
+
+			h1 {
+				font-size: 1.1em;
+                font-weight: bold;
+                margin-top: 15px;
+                color: #2f363e;
+			}
+
+            i {
+                margin: 0 10px;
+                color: #2f363e;
+            }
+
+            .error {
+                margin: 30px 0;
+            }
+
+            .error span {
+                color: crimson;
+            }
+
+            #characterCreator_general {
+
+            }
+
+            #characterCreator_look {
+                
+            }
+
+            .form-switch {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.form-switch i {
+  position: relative;
+  display: inline-block;
+  margin-right: .5rem;
+  width: 46px;
+  height: 26px;
+  background-color: #e6e6e6;
+  border-radius: 23px;
+  vertical-align: text-bottom;
+  transition: all 0.3s linear;
+}
+
+.form-switch i::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 42px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+  transition: all 0.25s linear;
+}
+
+.form-switch i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+  transform: translate3d(2px, 2px, 0);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-switch:active i::after {
+  width: 28px;
+  transform: translate3d(2px, 2px, 0);
+}
+
+.form-switch:active input:checked + i::after { transform: translate3d(16px, 2px, 0); }
+
+.form-switch input { display: none; }
+
+.form-switch input:checked + i { background-color: #4BD763; }
+
+.form-switch input:checked + i::before { transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0); }
+
+.form-switch input:checked + i::after { transform: translate3d(22px, 2px, 0); }
+
+.opacity {
+    animation:opac 1.3s
+}
+@keyframes opac {
+    from { opacity:0 } to { opacity:1 }
+}

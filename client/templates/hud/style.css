@@ -1,0 +1,22 @@
+.wrapper {
+    width: 290px;
+    height: 30px;
+    padding: 17px;
+    right: 0;
+    top: 0;
+    margin: 15px;
+    font-family: Tahoma,Verdana,Segoe,sans-serif;
+    color: #fff;
+    font-size: 17px;
+    float: right;
+    background: #828282bf;
+    letter-spacing: 0.02em;
+    border-left: 14px solid #a3dcef;
+}
+
+.opacity {
+    animation:opac 1.3s
+}
+@keyframes opac {
+    from { opacity:0 } to { opacity:1 }
+}
